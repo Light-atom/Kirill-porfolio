@@ -3,116 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Портфолио Кирилл</title>
+    <title>Сайт на реконструкции</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #2a2a2a, #0a0a0a);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #daa520, #ffd700, #ffffff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-<!-- Навигация -->
-<header>
-    <div class="navbar">
-        <div class="logo"><a href="#">KS.</a></div>
-        <ul class="links">
-            <li style="--i: 0;"><a class='menu__link' href="#home">Главная</a></li>
-            <li style="--i: 1;"><a class='menu__link' href="#about">Обо мне</a></li>
-            <li style="--i: 2;"><a class='menu__link' href="#project">Мои проекты</a></li>
-        </ul>
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+    <div>
+        <h1>Сайт в процессе доработки</h1>
+        <p>Новая версия уже в сборке</p>
     </div>
-
-    <div class="dropdown-menu">
-        <li style="--i: 0;"><a class='menu__link' href="#home">Главная</a></li>
-        <li style="--i: 1;"><a class='menu__link' href="#about">Обо мне</a></li>
-        <li style="--i: 2;"><a class='menu__link' href="#project">Мои проекты</a></li>
-    </div>
-</header>
-
-<!-- Главная -->
-<section class="home" id="home">
-    <div class="home-img">
-        <img src="Image/IMG_3728.JPG" alt="Кирилл">
-    </div>
-    <div class="home-content">
-        <h1>Привет, я <span>Кирилл</span></h1>
-        <p>Я обычный школьник, но каждый день становлюсь лучше.</p>
-        <p>Учусь, пробую, ошибаюсь и снова пробую.</p> 
-        <p>Я хочу, чтобы родители гордились мной!</p>
-        <p>Это мой старт - скоро здесь будут мои проекты!</p>
-        <div class="social-icons">
-            <a href="https://m.vk.com/id738897265"><i class="fa-brands fa-vk"></i></a>
-            <a href="https://t.me/kirillsablin"><i class="fa-brands fa-telegram"></i></a>
-        </div>
-    </div>
-    <div class="scroll-down">
-        <a href="#about"><i class="fas fa-chevron-down"></i></a>
-    </div>
-</section>
-
-<!-- Обо мне -->
-<section class="section" id="about">
-    <div class="content">
-        <h2 class="animate">Обо мне</h2>
-        <div class="about-grid">
-            <div class="about-card animate">
-                <i class="fas fa-code"></i>
-                <h3>Программирование</h3>
-                <p>Я только учусь. Изучаю языки:</p> 
-                <p>HTML, CSS, JavaScript, C++, Python</p>  
-                <p>В дальнейшем хочу увеличить количество языков!</p>
-            </div>
-            <div class="about-card animate">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Рисование</h3>
-                <p>В свободное время или когда мне скучно, я могу рисовать как красиво, так и не очень - зависит от вдохновения.</p>
-            </div>
-            <div class="about-card animate">
-                <i class="fas fa-music"></i>
-                <h3>Музыка</h3>
-                <p>Когда я делаю какие-то дела, я делаю их под музыку!</p>
-                <p>Музыка помогает сосредоточиться на занятии и не дает заскучать!</p>
-                <p>И просто мне нравится слушать!</p>
-                <p>Также в скорем времени хочу купить гитару, и научиться играть на ней!</p>
-            </div>
-            <div class="about-card animate">
-                <i class="fas fa-fist-raised"></i>
-                <h3>Кикбоксинг</h3>
-                <p>Занимаюсь кикбоксингом.</p>
-                <p>Это спорт для силы и дисциплины.</p>
-                <p>Улучшает физические способности и выносливость!</p>
-            </div>
-        </div>
-        
-        <div class="about-text animate">
-            <p>Всем привет, кто зашел на мой сайт!</p>
-            <p>Сайт я сделал сам. Мне 15 лет, я 2009 года рождения, учусь в 9 классе!</p>
-        </div>
-    </div>
-</section>
-
-<!-- Проекты -->
-<section class="section" id="project">
-    <div class="content">
-        <h2 class="animate">Мои проекты</h2>
-        <div class="about-grid">
-            <div class="about-card animate">
-                <i class="fas fa-code"></i>
-                <h3>Проекты</h3>
-                <p>На данный момент тут нет проектов :(</p> 
-                <p>В дальнейшем сюда добавлю проекты!</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Скрипт -->
-<script src="Java/script.js"></script>
 </body>
-
 </html>
-
