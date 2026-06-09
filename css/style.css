@@ -568,28 +568,3 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* ========== СТРАНИЦА-ЗАГЛУШКА ========== */
-.construction {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: var(--black);
-}
-
-.construction-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.construction-content p {
-    font-size: 1.3rem;
-    color: var(--gray);
-}
-
-.construction-content p span {
-    color: var(--gold);
-    font-weight: 600;
-}
